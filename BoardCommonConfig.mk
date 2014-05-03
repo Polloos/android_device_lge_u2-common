@@ -36,6 +36,9 @@ BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/l
 TARGET_OTA_ASSERT_DEVICE := p760,p765,p768,u2
 #BOARD_TOUCH_RECOVERY := true
 
+# Recovery Philz
+PRODUCT_COPY_FILES += device/lge/u2-common/recovery/extra.fstab:recovery/root/etc/extra.fstab
+
 # EGL
 BOARD_EGL_CFG := device/lge/u2-common/egl.cfg
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
