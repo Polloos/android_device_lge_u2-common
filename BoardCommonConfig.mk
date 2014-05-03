@@ -27,12 +27,14 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-# Recovery
+# Recovery ClockWorkMod
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_RECOVERY_SWIPE := true
 TARGET_RECOVERY_FSTAB = device/lge/u2-common/fstab.u2
 RECOVERY_FSTAB_VERSION = 2
 BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun/file"
 TARGET_OTA_ASSERT_DEVICE := p760,p765,p768,u2
+#BOARD_TOUCH_RECOVERY := true
 
 # EGL
 BOARD_EGL_CFG := device/lge/u2-common/egl.cfg
